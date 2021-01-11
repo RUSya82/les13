@@ -1,0 +1,76 @@
+.wrapper{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #989c9c;
+}
+.form{
+  width: 317px;
+  background-image: linear-gradient(to top, #ffffff 0%, #ebf4f4 100%);
+  opacity: 0.6;
+  position: relative;
+  padding-top: 54px;
+  h2{
+    width: 149px;
+    height: 25px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    background-color: $btn-color;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    @include font('Arial', 12px, #ffffff, 400);
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: -3px;
+  }
+  ul{
+    list-style-type: none;
+    width: 82%;
+    margin: 0 auto;
+    li{
+      @include font($font-family, 12px, #333333, 700);
+      display: flex;
+      flex-direction: column;
+      margin-top: 13px;
+      span{
+        color: #01b3b3;
+        line-height: 10px;
+      }
+      input{
+        width: 260px;
+        height: 30px;
+        margin-top: 5px;
+        padding: 0 11px;
+        background-color: #cecaca;
+      }
+      &:last-child{
+        margin-top: 0;
+      }
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+  button{
+    width: 260px;
+    height: 45px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 2px #ffffff;
+    border: 1px solid #dcdcdc;
+    background-color: #01b3b3;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    @include font($font-family, 16px, #ffffff, 400);
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 35px 0 30px 0;
+  }
+}
